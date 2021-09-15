@@ -15,9 +15,9 @@ You can find all of the content and slides for Danny Ma's SQL Masterclass held a
 
 # Table of Contents
 
-- [Introduction](#introduction)
-- [Course Content](#course-content)
-- [Accessing The Data](#accessing-the-data)
+- [📚 Course Content](#course-content)
+- [📊 Accessing The Data](#accessing-the-data)
+- [🙏 Conclusion](#thank-you--next-steps)
 
 # 👋 Introduction
 
@@ -27,7 +27,7 @@ To avoid any legal issues - all of the SQL live training material is available d
 
 You can also see the presentation slides for the live training [here!](https://github.com/datawithdanny/sql-masterclass/tree/main/slides/sql-masterclass-odsc-apac-2021.pdf)
 
-# Course Content <a name = "course-content"></a>
+# 📚 Course Content <a name = "course-content"></a>
 
 Click the navigation badge below to get started - all of the course tutorials can be found in the `/course-content` folder!
 
@@ -35,13 +35,13 @@ Click the navigation badge below to get started - all of the course tutorials ca
 
 [![forthebadge](./images/badges/start-here.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
 
-# Accessing The Data <a name = "accessing-the-data"></a>
+# 📊 Accessing The Data <a name = "accessing-the-data"></a>
 
 Although all of the code examples show the outputs directly inside the training materials for this masterclass, you can also play with the data locally or on a few different hosted services provided below!
 
 My recommendations are to use any one of the `Docker` solutions to best replicate the SQLPad environment used for the actual live training session.
 
-You can also access the free `DB-Fiddle` instances below or you can also access the raw data [here!]](#raw-data)
+You can also access the free `DB-Fiddle` instances below or you can also access the raw data [here!](#raw-data)
 
 ## Docker Solutions
 
@@ -112,12 +112,66 @@ You can also find all of the raw data inside the `/data` folder
 * `schema.sql` with the table definitions in case you want to use another SQL flavour
 * `.csv` files containing the raw data for each table if you want to import the data to another tool
 
-# Thanks!
+# Thank You & Next Steps <a name = "next-steps"></a>
 
-Please help me by starring this repo and sharing it with your friends! ⭐️⭐️⭐️
+Thank you for your taking this free SQL Masterclass GitHub course! If you've enjoyed this - please feel free to share this with your friends and leave a review! ⭐
 
-You can also find out more about the Data With Danny virtual data apprenticeship program and more of my free training content [here!](https://bit.ly/dwd-info)
+Here are some ways you can support the author and the Data With Danny team below 🙏
 
-<a href="https://bit.ly/dwd-info" target="_blank" rel="noopener noreferrer">
-<img src="./course-content/assets/dwd-banner.png"
+## Data With Danny Virtual Data Apprenticeship
+
+<a href="https://www.datawithdanny.com" target="_blank" rel="noopener noreferrer">
+<img src="./course-content/assets/dwd-banner.png" width="50%" height="50%">
 </a>
+<br>
+
+If you're interested in learning valuable data science skills with Danny directly - you can checkout the [Data With Danny](https://www.datawithdanny.com) website for more details!
+
+Join our private student community with over 1,000 data professionals, join a local study group, get help from our team of 12+ data mentors and learn more about our personalized mentorship initiatives!
+
+The 1st part of the Data With Danny program is Serious SQL which is like this SQL course but on an entirely differently level. If you're serious about learning SQL you won't want to miss this course!
+
+Our first live SQL training cohort begins in November 2021 - you can gain all access to course content, recorded videos, our private Discord and more for a one off payment of only $49 - find out more [here!](https://www.datawithdanny.com/courses/serious-sql)
+
+*Click on the image above to open the Data With Danny website in a new tab!*
+
+## 8 Week SQL Challenge Case Studies
+
+<a href="www.8weeksqlchallenge.com/getting-started" target="_blank" rel="noopener noreferrer">
+<img src="./course-content/assets/8-week-sql-challenge.png" width="50%" height="50%">
+</a>
+<br>
+
+Want to test your SQL skills and tackle 8 realistic SQL case studies and get access to a collection of free SQL learning resources?
+
+Join the Data With Danny [8 Week SQL Challenge](https://www.8weeksqlchallenge.com/getting-started) for free today!
+
+Solve all 8 realistic SQL case studies designed to simulate real work scenarios and interview questions across multiple analytics domains including customer analytics, digital, banking, retail and subscriptions!
+
+*Click on the image above to open the 8 Week SQL Challenge website in a new tab!*
+
+## About the Author: Danny Ma <a name = "about-danny"></a>
+
+<a href="https://linktr.ee/datawithdanny" target="_blank" rel="noopener noreferrer">
+<img src="./course-content/assets/avatar.png" width="50%" height="50%">
+</a>
+
+Danny is the Chief Data Mentor at Data With Danny and the Founder & CEO of Sydney Data Science, a boutique data consultancy based out of Sydney, Australia 🇦🇺
+
+After spending the last 10 years working in almost every single role in the data ecosystem, Danny is now focused on solving difficult problems at scale re-imagining data education and recruitment, and mentoring the next generation of data professionals.
+
+He provides specialist data consultancy services:
+
+* Digital customer analytics and experimentation
+* Data and machine learning strategy
+* Data engineering and systems design
+* Team building for analytics and data science functions
+* Technical training for practitioners and management
+
+Danny is a regular speaker at global data conferences, meetups and podcasts where he shares the importance of mentorship for all data professionals. He is
+also a technical author and instructor for O'Reilly.
+
+Danny believes that he is living proof that dispels the myth that you need higher level education to be successful in the data science space,
+and he wants to share his experiences with others so they can do the same.
+
+*Click on the image above to open Danny's LinkTree in a new tab!*
