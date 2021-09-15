@@ -17,7 +17,7 @@ In PostgreSQL, a database can contain multiple schemas, and a schema is a collec
 
 ## Copy and Run a SQL Query
 
-To run our first query together - you can click on the code snippet below to copy a basic `SELECT` query below to your clipboard.
+To run our first query together - you can click on the right hand corner of the following code snippet below to copy a basic `SELECT` query to your clipboard.
 
 You can then paste it into your SQLPad interface and click on the `Run` button in the top right corner or hit `cmd` + `enter` on Mac or `control` + `enter` on Windows to run the query.
 
@@ -81,4 +81,4 @@ SELECT * FROM members;
 
 In realistic scenarios - physical tables will almost always live within a schema and we'll need to reference the schema name to run our queries properly!
 
-[![forthebadge](./../images/badges/go-to-next-tutorial.svg](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step2.md)
+[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step2.md)

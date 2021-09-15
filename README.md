@@ -27,17 +27,11 @@ To avoid any legal issues - all of the SQL live training material is available d
 
 You can also see the presentation slides for the live training [here!](https://github.com/datawithdanny/sql-masterclass/tree/main/slides/sql-masterclass-odsc-apac-2021.pdf)
 
-Please help me by starring this repo and sharing it with your friends! ⭐️⭐️⭐️
-
-You can also find out more about the Data With Danny virtual data apprenticeship program [here!](https://bit.ly/dwd-info)
-
-<a href="https://bit.ly/dwd-info" target="_blank" rel="noopener noreferrer">
-<img src="./course-content/assets/dwd-banner.png"
-</a>
-
 # Course Content <a name = "course-content"></a>
 
 Click the navigation badge below to get started - all of the course tutorials can be found in the `/course-content` folder!
+
+**CLICK ON THE BADGE BELOW TO GET STARTED!!!**
 
 [![forthebadge](./images/badges/start-here.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
 
@@ -117,3 +111,13 @@ You can also find all of the raw data inside the `/data` folder
 * `init.sql` to generate all the required data inside PostgreSQL, simply copy and paste the contents and run
 * `schema.sql` with the table definitions in case you want to use another SQL flavour
 * 3 `.csv` files containing the raw data for each table if you want to import the data to another tool
+
+# Thanks!
+
+Please help me by starring this repo and sharing it with your friends! ⭐️⭐️⭐️
+
+You can also find out more about the Data With Danny virtual data apprenticeship program and more of my free training content [here!](https://bit.ly/dwd-info)
+
+<a href="https://bit.ly/dwd-info" target="_blank" rel="noopener noreferrer">
+<img src="./course-content/assets/dwd-banner.png"
+</a>

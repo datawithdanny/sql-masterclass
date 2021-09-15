@@ -7,10 +7,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]()
 [![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)]()
 
-# Step 2 - Exploring `trading.members`
+# Step 2 - Exploring The Members Data
 
-[![forthebadge](./../images/badges/go-to-previous-tutorial.svg](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step.md)
-[![forthebadge](./../images/badges/go-to-next-tutorial.svg](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step.md)
+[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
+[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step3.md)
 
 Let's now inspect our `trading.members` table in a bit more depth.
 
@@ -48,7 +48,7 @@ All the solutions are initially hidden - if you are adventurous, you can try to 
 
 ### How Do I Run These Code Examples?
 
-Reveal the code, click on it to copy and paste it directly into the SQLPad interface then click on the `Run` button in the top right of SQLPad or hit `cmd` + `enter` on Mac or `control` + `enter` on Windows to run the query.
+Reveal the code, click on the right hand corner in GitHub to copy it to your clipboard and paste it directly into the SQLPad interface then click on the `Run` button in the top right of SQLPad or hit `cmd` + `enter` on Mac or `control` + `enter` on Windows to run the query.
 
 > Remember to clear all previous SQL queries from SQLPad before running each new SQL query to avoid clashes in generated outputs!
 
@@ -80,7 +80,7 @@ ORDER BY first_name
 LIMIT 3;
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 3
@@ -95,7 +95,7 @@ SELECT * FROM trading.members
 WHERE region = 'United States';
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 4
@@ -113,7 +113,7 @@ FROM trading.members
 WHERE region != 'Australia';
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 5
@@ -129,7 +129,7 @@ FROM trading.members
 ORDER BY region DESC;
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 6
@@ -146,7 +146,7 @@ FROM trading.members
 WHERE region IN ('Australia', 'United States')
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 7
@@ -163,7 +163,7 @@ FROM trading.members
 WHERE region NOT IN ('Australia', 'United States')
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 8
@@ -182,7 +182,7 @@ GROUP BY region
 ORDER BY mentor_count DESC;
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 9
@@ -204,7 +204,7 @@ GROUP BY mentor_region
 ORDER BY mentor_count DESC;
 ```
 
-<details>
+</details>
 <br>
 
 ### Question 10
@@ -221,7 +221,7 @@ FROM trading.members
 WHERE LEFT(first_name, 1) < 'E';
 ```
 
-<details>
+</details>
 <br>
 
 ## Appendix
