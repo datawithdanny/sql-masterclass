@@ -67,6 +67,15 @@ LIMIT 5;
 </details>
 <br>
 
+| member_id | first_name |    region     |
+| --------- | ---------- | ------------- |
+| c4ca42    | Danny      | Australia     |
+| c81e72    | Vipul      | United States |
+| eccbc8    | Charlie    | United States |
+| a87ff6    | Nandita    | United States |
+| e4da3b    | Rowan      | United States |
+<br>
+
 ### Question 2
 
 > Sort all the rows in the table by `first_name` in alphabetical order and show the top 3 rows
@@ -83,6 +92,13 @@ LIMIT 3;
 </details>
 <br>
 
+| member_id | first_name |    region     |
+| --------- | ---------- | ------------- |
+| c9f0f8    | Abe        | United States |
+| 8f14e4    | Alex       | United States |
+| 167909    | Ayush      | United States |
+<br>
+
 ### Question 3
 
 > Which records from `trading.members` are from the United States region?
@@ -96,6 +112,17 @@ WHERE region = 'United States';
 ```
 
 </details>
+<br>
+
+| member_id | first_name |    region     |
+| --------- | ---------- | ------------- |
+| c81e72    | Vipul      | United States |
+| eccbc8    | Charlie    | United States |
+| a87ff6    | Nandita    | United States |
+| e4da3b    | Rowan      | United States |
+| 167909    | Ayush      | United States |
+| 8f14e4    | Alex       | United States |
+| c9f0f8    | Abe        | United States |
 <br>
 
 ### Question 4
@@ -116,6 +143,20 @@ WHERE region != 'Australia';
 </details>
 <br>
 
+| member_id | first_name |
+| --------- | ---------- |
+| c81e72    | Vipul      |
+| eccbc8    | Charlie    |
+| a87ff6    | Nandita    |
+| e4da3b    | Rowan      |
+| 167909    | Ayush      |
+| 8f14e4    | Alex       |
+| c9f0f8    | Abe        |
+| d3d944    | Enoch      |
+| 6512bd    | Vikram     |
+| c20ad4    | Leah       |
+<br>
+
 ### Question 5
 
 > Return the unique `region` values from the `trading.members` table and sort the output by reverse alphabetical order
@@ -132,6 +173,15 @@ ORDER BY region DESC;
 </details>
 <br>
 
+|    region     | 
+| ------------- |
+| United States |
+| India         |
+| Australia     |
+| Asia          |
+| Africa        |
+<br>
+
 ### Question 6
 
 > How many mentors are there from Australia or the United States?
@@ -143,10 +193,19 @@ ORDER BY region DESC;
 SELECT
   COUNT(*) AS mentor_count
 FROM trading.members
-WHERE region IN ('Australia', 'United States')
+WHERE region IN ('Australia', 'United States');
 ```
 
 </details>
+<br>
+
+|    region     |
+| ------------- |
+| United States |
+| India         |
+| Australia     |
+| Asia          |
+| Africa        |
 <br>
 
 ### Question 7
@@ -160,10 +219,15 @@ WHERE region IN ('Australia', 'United States')
 SELECT
   COUNT(*) AS mentor_count
 FROM trading.members
-WHERE region NOT IN ('Australia', 'United States')
+WHERE region NOT IN ('Australia', 'United States');
 ```
 
 </details>
+<br>
+
+| mentor_count |
+| ------------ |
+|            3 |
 <br>
 
 ### Question 8
@@ -183,6 +247,15 @@ ORDER BY mentor_count DESC;
 ```
 
 </details>
+<br>
+
+|    region     | mentor_count |
+| ------------- | ------------ |
+| United States |            7 |
+| Australia     |            4 |
+| India         |            1 |
+| Africa        |            1 |
+| Asia          |            1 |
 <br>
 
 ### Question 9
@@ -207,6 +280,12 @@ ORDER BY mentor_count DESC;
 </details>
 <br>
 
+| mentor_region | mentor_count |
+| ------------- | ------------ |
+| United States |            7 |
+| Non US        |            7 |
+<br>
+
 ### Question 10
 
 > How many mentors have a first name starting with a letter before `'E'`?
@@ -223,6 +302,14 @@ WHERE LEFT(first_name, 1) < 'E';
 
 </details>
 <br>
+
+| mentor_count |
+| ------------ |
+|            6 |
+<br>
+
+[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
+[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step3.md)
 
 ## Appendix
 
@@ -243,6 +330,3 @@ Best practice is to always apply `WHERE` filters on specific partitions where po
 You might have noticed in questions 4 and 9 there are two different methods for showing "not equals"
 
 You can use both `!=` or `<>` in `WHERE` filters to exclude records.
-
-[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
-[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step3.md)

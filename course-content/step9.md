@@ -39,7 +39,17 @@ AND txn_date = '2017-01-01'
 AND quantity = 50;
 ```
 
-You can inspect the data by running the following query after creating the temp table above - `SELECT * FROM leah_hodl_strategy;`{{copy}}
+You can inspect the data by running the following query after creating the temp table above:
+
+```sql
+SELECT * FROM leah_hodl_strategy;
+```
+
+| txn_id | member_id | ticker |  txn_date  | txn_type | quantity | percentage_fee |      txn_time       |
+| ------ | --------- | ------ | ---------- | -------- | -------- | -------------- | ------------------- |
+|     12 | c20ad4    | BTC    | 2017-01-01 | BUY      |       50 |           0.30 | 2017-01-01 00:00:00 |
+|     26 | c20ad4    | ETH    | 2017-01-01 | BUY      |       50 |           0.30 | 2017-01-01 00:00:00 |
+<br>
 
 ## Required Metrics
 
@@ -73,6 +83,11 @@ INNER JOIN trading.prices
 
 </details><br>
 
+| initial_value |         fees         |
+| ------------- | -------------------- |
+|      50180.00 | 150.5400000000000000 |
+<br>
+
 ### Question 3
 
 > The final value of her portfolio on August 29th 2021
@@ -89,6 +104,10 @@ WHERE prices.market_date = '2021-08-29';
 ```
 
 </details><br>
+
+| final_value |
+| ----------- |
+|  2571642.00 |
 
 ### Question 4
 
@@ -123,6 +142,11 @@ FROM cte_portfolio_values;
 ```
 
 </details><br>
+
+| initial_value |         fees         | final_value |    profitability    |
+| ------------- | -------------------- | ----------- | ------------------- |
+|      50180.00 | 150.5400000000000000 |  2571642.00 | 51.2483459545635711 |
+<br>
 
 [![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step8.md)
 [![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step10.md)

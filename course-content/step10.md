@@ -33,9 +33,25 @@ WHERE member_id = '6512bd'
 AND txn_type = 'BUY';
 ```
 
-Again, we can inspect the data by running the following query after creating the temp table above - `SELECT * FROM vikram_bull_strategy;`
+Again, we can inspect the data by running the following query after creating the temp table above:
 
+```sql
+SELECT * FROM vikram_bull_strategy LIMIT 10;
+```
 
+| txn_id | member_id | ticker |  txn_date  | txn_type |     quantity     | percentage_fee |          txn_time          |
+| ------ | --------- | ------ | ---------- | -------- | ---------------- | -------------- | -------------------------- |
+|     11 | 6512bd    | BTC    | 2017-01-01 | BUY      |               50 |           0.30 | 2017-01-01 00:00:00        |
+|     25 | 6512bd    | ETH    | 2017-01-01 | BUY      |               50 |           0.30 | 2017-01-01 00:00:00        |
+|     30 | 6512bd    | ETH    | 2017-01-01 | BUY      | 8.84298701787532 |           0.30 | 2017-01-01 06:22:20.202995 |
+|     31 | 6512bd    | BTC    | 2017-01-01 | BUY      | 2.27106258645779 |           0.21 | 2017-01-01 06:40:48.691577 |
+|     35 | 6512bd    | BTC    | 2017-01-01 | BUY      | 6.73841780964583 |           0.30 | 2017-01-01 11:00:14.002519 |
+|     36 | 6512bd    | BTC    | 2017-01-01 | BUY      | 9.37875791241961 |           0.30 | 2017-01-01 12:03:33.017453 |
+|     55 | 6512bd    | BTC    | 2017-01-02 | BUY      | 5.54383811940401 |           0.30 | 2017-01-02 11:12:42.895079 |
+|     63 | 6512bd    | ETH    | 2017-01-02 | BUY      | 5.04372609654009 |           0.07 | 2017-01-02 20:48:13.480413 |
+|     65 | 6512bd    | BTC    | 2017-01-02 | BUY      | 3.01276029896716 |           0.30 | 2017-01-02 21:00:49.341793 |
+|     99 | 6512bd    | ETH    | 2017-01-04 | BUY      | 1.83100404691078 |           0.30 | 2017-01-04 22:04:12.689306 |
+<br>
 
 ## Required Metrics
 
@@ -70,6 +86,11 @@ INNER JOIN trading.prices
 
 </details><br>
 
+|     initial_investment      |            fees             |
+| --------------------------- | --------------------------- |
+| 50730451.023400136384298882 | 128821.14163246531801672694 |
+<br>
+
 ### Question 3
 
 > What is the average cost per unit of BTC and ETH purchased by Vikram
@@ -96,6 +117,12 @@ FROM cte_portfolio;
 
 </details><br>
 
+| ticker |   dollar_cost_average   |
+| ------ | ----------------------- |
+| BTC    | 12190.13846337579877423 |
+| ETH    |  538.402092304626902638 |
+<br>
+
 ### Question 4
 
 > Calculate profitability by using final portfolio value divided by the investment amount
@@ -121,6 +148,10 @@ FROM cte_portfolio_values;
 ```
 
 </details><br>
+
+|    profitability     |
+| -------------------- |
+| 4.019204544489789883 |
 
 ### Question 5
 
@@ -150,6 +181,12 @@ FROM cte_ticker_portfolio_values;
 ```
 
 </details><br>
+
+| ticker |    profitability     |
+| ------ | -------------------- |
+| BTC    |  3.95852763649714995 |
+| ETH    | 5.902354477110731653 |
+<br>
 
 [![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step9.md)
 [![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step11.md)

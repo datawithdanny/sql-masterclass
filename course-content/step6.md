@@ -114,6 +114,7 @@ ORDER BY ticker, year_end;
 | 2018-12-31 | ETH    |  350.000100283493089 |
 | 2019-12-31 | ETH    |  464.317705594980087 |
 | 2020-12-31 | ETH    | 508.4673343549910666 |
+<br>
 
 We can see from the output above that the yearly quantity is exactly the total portfolio quantity values that we need - we will need to create a cumulative sum of the `yearly_quantity` column that is separate for each mentor and ticker, using the `year_end` as the ordering column.
 
@@ -149,6 +150,7 @@ ORDER BY ticker, year_end;
 
 </details><br>
 
+
 |  year_end  | ticker |   yearly_quantity    |  cumulative_quantity  |
 | ---------- | ------ | -------------------- | --------------------- |
 | 2017-12-31 | BTC    | 861.0106371411443039 |  861.0106371411443039 |
@@ -159,8 +161,7 @@ ORDER BY ticker, year_end;
 | 2018-12-31 | ETH    |  350.000100283493089 |  893.2121489760647394 |
 | 2019-12-31 | ETH    |  464.317705594980087 | 1357.5298545710448264 |
 | 2020-12-31 | ETH    | 508.4673343549910666 | 1865.9971889260358930 |
-
-</details><br>
+<br>
 
 ### Step 4
 
@@ -209,7 +210,7 @@ ORDER BY ticker, year_end;
 
 </details><br>
 
-| year_end | ticker |   yearly_quantity    | cumulative_quantity  |
+| year_end   | ticker |   yearly_quantity    | cumulative_quantity  |
 | ---------- | ------ | -------------------- | -------------------- |
 | 2017-01-01 | BTC    | 861.0106371411443039 | 861.0106371411443039 |
 | 2018-01-01 | BTC    | 755.1495855476883388 | 755.1495855476883388 |
@@ -252,7 +253,35 @@ FROM temp_portfolio_base;
 
 </details><br>
 
-You can make sure this step is ran by checking the outputs from this query: `SELECT * FROM temp_cumulative_portfolio_base;`{{copy}}
+You can make sure this step is ran by checking the outputs from this query:
+
+```sql
+SELECT * FROM temp_cumulative_portfolio_base LIMIT 20;
+```
+
+| first_name |    region     |  year_end  | ticker |    yearly_quantity    |  cumulative_quantity   |
+| ---------- | ------------- | ---------- | ------ | --------------------- | ---------------------- |
+| Abe        | United States | 2017-12-31 | BTC    |  861.0106371411443039 |   861.0106371411443039 |
+| Abe        | United States | 2018-12-31 | BTC    |  755.1495855476883388 |  1616.1602226888326427 |
+| Abe        | United States | 2019-12-31 | BTC    |   765.655338171040942 |  2381.8155608598735847 |
+| Abe        | United States | 2020-12-31 | BTC    |  859.3718776810842491 |  3241.1874385409578338 |
+| Abe        | United States | 2017-12-31 | ETH    |  543.2120486925716504 |   543.2120486925716504 |
+| Abe        | United States | 2018-12-31 | ETH    |   350.000100283493089 |   893.2121489760647394 |
+| Abe        | United States | 2019-12-31 | ETH    |   464.317705594980087 |  1357.5298545710448264 |
+| Abe        | United States | 2020-12-31 | ETH    |  508.4673343549910666 |  1865.9971889260358930 |
+| Alex       | United States | 2017-12-31 | BTC    |  453.4749593742834454 |   453.4749593742834454 |
+| Alex       | United States | 2018-12-31 | BTC    |  447.1910423241274346 |   900.6660016984108800 |
+| Alex       | United States | 2019-12-31 | BTC    |   490.959718475924108 |  1391.6257201743349880 |
+| Alex       | United States | 2020-12-31 | BTC    |   444.259179847377622 |  1835.8849000217126100 |
+| Alex       | United States | 2017-12-31 | ETH    |   678.274023865761511 |    678.274023865761511 |
+| Alex       | United States | 2018-12-31 | ETH    | 546.83620089990823574 | 1225.11022476566974674 |
+| Alex       | United States | 2019-12-31 | ETH    |  476.8692888907140746 | 1701.97951365638382134 |
+| Alex       | United States | 2020-12-31 | ETH    |  621.5582550264365449 | 2323.53776868282036624 |
+| Ayush      | United States | 2017-12-31 | BTC    |  794.5344541497821383 |   794.5344541497821383 |
+| Ayush      | United States | 2018-12-31 | BTC    |  955.3494738695000753 |  1749.8839280192822136 |
+| Ayush      | United States | 2019-12-31 | BTC    |  743.2345666894748266 |  2493.1184947087570402 |
+| Ayush      | United States | 2020-12-31 | BTC    | 954.85594846498402504 | 3447.97444317374106524 |
+
 
 Now that we've obtained our base table properly - let's start answering some of these questions!
 

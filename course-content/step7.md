@@ -95,6 +95,24 @@ ORDER BY portfolio_value DESC;
 
 </details><br>
 
+| first_name | portfolio_value |
+| ---------- | --------------- |
+| Nandita    |    105391731.03 |
+| Leah       |    100724284.81 |
+| Ayush      |    100071736.51 |
+| Abe        |     95203693.60 |
+| Ben        |     92722998.25 |
+| Enoch      |     88346609.78 |
+| Vikram     |     88000702.69 |
+| Danny      |     84696448.83 |
+| Sonia      |     67932183.73 |
+| Rowan      |     67241367.69 |
+| Charlie    |     66761769.49 |
+| Alex       |     54857750.71 |
+| Vipul      |     43123911.62 |
+| Pavan      |     41764439.70 |
+<br>
+
 ## Question 2
 
 > What is the total portfolio value for each region at the end of 2019?
@@ -120,6 +138,15 @@ ORDER BY portfolio_value DESC;
 ```
 
 </details><br>
+
+|    region     | portfolio_value |
+| ------------- | --------------- |
+| United States |     98795362.60 |
+| Australia     |     52861452.00 |
+| Asia          |     18305366.24 |
+| India         |     16168831.76 |
+| Africa        |     16078915.65 |
+<br>
 
 ## Question 3
 
@@ -164,6 +191,24 @@ ORDER BY region_total DESC, contribution_percentage DESC;
 
 </details><br>
 
+|    region     | first_name | contribution_percentage |
+| ------------- | ---------- | ----------------------- |
+| United States | Nandita    |                   20.00 |
+| United States | Ayush      |                   18.61 |
+| United States | Abe        |                   17.45 |
+| United States | Rowan      |                   14.34 |
+| United States | Charlie    |                   12.52 |
+| United States | Alex       |                   10.00 |
+| United States | Vipul      |                    7.08 |
+| Australia     | Danny      |                   31.55 |
+| Australia     | Ben        |                   30.41 |
+| Australia     | Sonia      |                   24.53 |
+| Australia     | Pavan      |                   13.51 |
+| Asia          | Leah       |                  100.00 |
+| Africa        | Enoch      |                  100.00 |
+| India         | Vikram     |                  100.00 |
+<br>
+
 ## Question 4
 
 > Does this region contribution percentage change when we look across both Bitcoin and Ethereum portfolios independently at the end of 2017?
@@ -207,6 +252,38 @@ ORDER BY ticker, region, contribution_percentage DESC;
 ```
 
 </details><br>
+
+|    region     | first_name | ticker | contribution_percentage |
+| ------------- | ---------- | ------ | ----------------------- |
+| Africa        | Enoch      | BTC    |                  100.00 |
+| Asia          | Leah       | BTC    |                  100.00 |
+| Australia     | Ben        | BTC    |                   32.96 |
+| Australia     | Danny      | BTC    |                   29.99 |
+| Australia     | Sonia      | BTC    |                   21.86 |
+| Australia     | Pavan      | BTC    |                   15.19 |
+| India         | Vikram     | BTC    |                  100.00 |
+| United States | Nandita    | BTC    |                   20.99 |
+| United States | Abe        | BTC    |                   17.69 |
+| United States | Ayush      | BTC    |                   16.32 |
+| United States | Rowan      | BTC    |                   14.65 |
+| United States | Charlie    | BTC    |                   12.13 |
+| United States | Alex       | BTC    |                    9.32 |
+| United States | Vipul      | BTC    |                    8.91 |
+| Africa        | Enoch      | ETH    |                  100.00 |
+| Asia          | Leah       | ETH    |                  100.00 |
+| Australia     | Ben        | ETH    |                   34.34 |
+| Australia     | Danny      | ETH    |                   30.06 |
+| Australia     | Sonia      | ETH    |                   29.93 |
+| Australia     | Pavan      | ETH    |                    5.66 |
+| India         | Vikram     | ETH    |                  100.00 |
+| United States | Nandita    | ETH    |                   21.21 |
+| United States | Vipul      | ETH    |                   20.91 |
+| United States | Alex       | ETH    |                   18.18 |
+| United States | Abe        | ETH    |                   14.56 |
+| United States | Charlie    | ETH    |                   12.36 |
+| United States | Rowan      | ETH    |                   10.11 |
+| United States | Ayush      | ETH    |                    2.66 |
+<br>
 
 ## Bonus Question 5
 

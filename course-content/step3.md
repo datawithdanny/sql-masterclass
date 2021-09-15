@@ -20,11 +20,33 @@ Before we try to solve our next set of questions below - you can try viewing a f
 
 Example Bitcoin price data:
 
-`SELECT * FROM trading.prices WHERE ticker = 'BTC' LIMIT 5;`
+```sql
+SELECT * FROM trading.prices WHERE ticker = 'BTC' LIMIT 5;
+```
+
+| ticker | market_date |  price  |  open   |  high   |   low   | volume | change |
+| ------ | ----------- | ------- | ------- | ------- | ------- | ------ | ------ |
+| BTC    | 2021-08-29  | 48255.0 | 48899.7 | 49621.7 | 48101.9 | 40.96K | -1.31% |
+| BTC    | 2021-08-28  | 48897.1 | 49062.8 | 49289.4 | 48428.5 | 36.73K | -0.34% |
+| BTC    | 2021-08-27  | 49064.3 | 46830.2 | 49142.0 | 46371.5 | 62.47K | 4.77%  |
+| BTC    | 2021-08-26  | 46831.6 | 48994.4 | 49347.8 | 46360.4 | 73.79K | -4.41% |
+| BTC    | 2021-08-25  | 48994.5 | 47707.4 | 49230.2 | 47163.3 | 63.54K | 2.68%  |
+<br>
 
 Example Ethereum price data:
 
-`SELECT * FROM trading.prices WHERE ticker = 'ETH' LIMIT 5;`
+```sql
+SELECT * FROM trading.prices WHERE ticker = 'ETH' LIMIT 5;
+```
+
+| ticker | market_date |  price  |  open   |  high   |   low   | volume  | change |
+| ------ | ----------- | ------- | ------- | ------- | ------- | ------- | ------ |
+| ETH    | 2021-08-29  | 3177.84 | 3243.96 | 3282.21 | 3162.79 | 582.04K | -2.04% |
+| ETH    | 2021-08-28  | 3243.90 | 3273.78 | 3284.58 | 3212.24 | 466.21K | -0.91% |
+| ETH    | 2021-08-27  | 3273.58 | 3093.78 | 3279.93 | 3063.37 | 839.54K | 5.82%  |
+| ETH    | 2021-08-26  | 3093.54 | 3228.03 | 3249.62 | 3057.48 | 118.44K | -4.17% |
+| ETH    | 2021-08-25  | 3228.15 | 3172.12 | 3247.43 | 3080.70 | 923.13K | 1.73%  |
+<br>
 
 ## Data Dictionary
 
@@ -63,6 +85,11 @@ FROM trading.prices;
 </details>
 <br>
 
+| total_records |
+| ------------- |
+|          3404 |
+<br>
+
 ### Question 2
 
 > How many records are there per `ticker` value?
@@ -82,6 +109,12 @@ GROUP BY ticker;
 </details>
 <br>
 
+| ticker | record_count |
+| ------ | ------------ |
+| BTC    |         1702 |
+| ETH    |         1702 |
+<br>
+
 ### Question 3
 
 > What is the minimum and maximum `market_date` values?
@@ -98,6 +131,11 @@ FROM trading.prices;
 ```
 
 </details>
+<br>
+
+|  min_date  |  max_date  |
+| ---------- | ---------- |
+| 2017-01-01 | 2021-08-29 |
 <br>
 
 ### Question 4
@@ -120,6 +158,12 @@ GROUP BY ticker;
 </details>
 <br>
 
+| ticker |  min_date  |  max_date  |
+| ------ | ---------- | ---------- |
+| BTC    | 2017-01-01 | 2021-08-29 |
+| ETH    | 2017-01-01 | 2021-08-29 |
+<br>
+
 ### Question 5
 
 > What is the average of the `price` column for Bitcoin records during the year 2020?
@@ -137,6 +181,11 @@ WHERE ticker = 'BTC'
 ```
 
 </details>
+<br>
+
+|        avg         |
+| ------------------ |
+| 11111.631147540984 |
 <br>
 
 ### Question 6
@@ -157,6 +206,22 @@ ORDER BY month_start;
 ```
 
 </details>
+<br>
+
+|      month_start       | average_eth_price |
+| ---------------------- | ----------------- |
+| 2020-01-01 00:00:00+00 |           4267.73 |
+| 2020-02-01 00:00:00+00 |           4937.66 |
+| 2020-03-01 00:00:00+00 |           3511.64 |
+| 2020-04-01 00:00:00+00 |           3691.16 |
+| 2020-05-01 00:00:00+00 |           4730.50 |
+| 2020-06-01 00:00:00+00 |           4858.88 |
+| 2020-07-01 00:00:00+00 |           4925.83 |
+| 2020-08-01 00:00:00+00 |           6020.07 |
+| 2020-09-01 00:00:00+00 |           5505.55 |
+| 2020-10-01 00:00:00+00 |           6132.07 |
+| 2020-11-01 00:00:00+00 |           8573.75 |
+| 2020-12-01 00:00:00+00 |          11302.20 |
 <br>
 
 ### Question 7
@@ -181,6 +246,12 @@ GROUP BY ticker;
 </details>
 <br>
 
+| ticker | total_count | unique_count |
+| ------ | ----------- | ------------ |
+| BTC    |        1702 |         1702 |
+| ETH    |        1702 |         1702 |
+<br>
+
 ### Question 8
 
 > How many days from the `trading.prices` table exist where the `high` price of Bitcoin is over $30,000?
@@ -189,7 +260,7 @@ GROUP BY ticker;
   <summary>Click here to reveal the solution!</summary>
 <br>
 
-```sqlsql
+```sql
 SELECT
   COUNT(*) AS row_count
 FROM trading.prices
@@ -198,6 +269,11 @@ WHERE ticker = 'BTC'
 ```
 
 </details>
+<br>
+
+| row_count |
+| --------- |
+|       240 |
 <br>
 
 ### Question 9
@@ -220,6 +296,12 @@ GROUP BY ticker;
 </details>
 <br>
 
+| ticker | breakout_days |
+| ------ | ------------- |
+| BTC    |           207 |
+| ETH    |           200 |
+<br>
+
 ### Question 10
 
 > How many "non_breakout" days were there in 2020 where the `price` column is less than the `open` column for each `ticker`?
@@ -239,6 +321,12 @@ GROUP BY ticker;
 ```
 
 </details>
+<br>
+
+| ticker | non_breakout_days |
+| ------ | ----------------- |
+| BTC    |               159 |
+| ETH    |               166 |
 <br>
 
 ### Question 11
@@ -270,6 +358,14 @@ GROUP BY ticker;
 </details>
 <br>
 
+| ticker | breakout_percentage | non_breakout_percentage |
+| ------ | ------------------- | ----------------------- |
+| BTC    |                0.57 |                    0.43 |
+| ETH    |                0.55 |                    0.45 |
+<br>
+
+[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step2.md)
+[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step4.md)
 
 # Appendix
 
@@ -367,6 +463,3 @@ GROUP BY ticker;
 
 </details>
 <br>
-
-[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step2.md)
-[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step4.md)
