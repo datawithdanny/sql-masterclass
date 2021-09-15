@@ -33,8 +33,6 @@ The 1st part of the Data With Danny program is Serious SQL which is like this SQ
 
 Our first live SQL training cohort begins in November 2021 - you can gain all access to course content, recorded videos, our private Discord and more for a one off payment of only $49 - find out more [here!](https://www.datawithdanny.com/courses/serious-sql)
 
-*Click on the image above to open the Data With Danny website in a new tab!*
-
 # 8 Week SQL Challenge Case Studies
 
 <a href="www.8weeksqlchallenge.com/getting-started" target="_blank" rel="noopener noreferrer">
@@ -47,9 +45,6 @@ Want to test your SQL skills and tackle 8 realistic SQL case studies and get acc
 Join the Data With Danny [8 Week SQL Challenge](https://www.8weeksqlchallenge.com/getting-started) for free today!
 
 Solve all 8 realistic SQL case studies designed to simulate real work scenarios and interview questions across multiple analytics domains including customer analytics, digital, banking, retail and subscriptions!
-
-*Click on the image above to open the 8 Week SQL Challenge website in a new tab!*
-
 
 # About the Instructor: Danny Ma
 
@@ -74,7 +69,5 @@ also a technical author and instructor for O'Reilly.
 
 Danny believes that he is living proof that dispels the myth that you need higher level education to be successful in the data science space,
 and he wants to share his experiences with others so they can do the same.
-
-*Click on the image above to open Danny's LinkTree in a new tab!*
 
 [![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step13.md)
