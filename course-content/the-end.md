@@ -13,13 +13,10 @@
 
 # Next Steps on Your SQL Journey!
 
-Thank you for your taking this free SQL Masterclass GitHub course! If you've enjoyed this - please feel free to share this with your friends and leave a review! ⭐
+Thank you for your taking this free SQL Masterclass GitHub course! If you've enjoyed this - please consider starring the repo and sharing it with your friends ⭐️
 
 This resource was originally created by [Danny Ma](https://www.linkedin.com/in/datawithdanny/) for the "SQL Masterclass for Data Scientists" half-day live training for the ODSC Asia Pacific 2021 Conference.
 
-You can go straight to the main `README.md` home page at the [GitHub repo!](https://github.com/DataWithDanny/sql-masterclass)
-
-Please consider starring the repo and sharing it with your friends ⭐️
 
 # Data With Danny Virtual Data Apprenticeship
 
