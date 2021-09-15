@@ -110,7 +110,7 @@ You can also find all of the raw data inside the `/data` folder
 
 * `init.sql` to generate all the required data inside PostgreSQL, simply copy and paste the contents and run
 * `schema.sql` with the table definitions in case you want to use another SQL flavour
-* 3 `.csv` files containing the raw data for each table if you want to import the data to another tool
+* `.csv` files containing the raw data for each table if you want to import the data to another tool
 
 # Thanks!
 

@@ -244,5 +244,5 @@ You might have noticed in questions 4 and 9 there are two different methods for 
 
 You can use both `!=` or `<>` in `WHERE` filters to exclude records.
 
-[![forthebadge](./../images/badges/go-to-previous-tutorial.svg](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
-[![forthebadge](./../images/badges/go-to-next-tutorial.svg](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step3.md)
+[![forthebadge](./../images/badges/go-to-previous-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step1.md)
+[![forthebadge](./../images/badges/go-to-next-tutorial.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/course-content/step3.md)
