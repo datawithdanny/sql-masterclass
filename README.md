@@ -124,7 +124,7 @@ Here are some ways you can support the author and the Data With Danny team below
 ## Data With Danny Virtual Data Apprenticeship
 
 <a href="https://www.datawithdanny.com" target="_blank" rel="noopener noreferrer">
-<img src="./course-content/assets/dwd-banner.png" width="50%" height="50%">
+<img src="./course-content/assets/dwd-banner.png">
 </a>
 <br>
 
@@ -139,7 +139,7 @@ Our first live SQL training cohort begins in November 2021 - you can gain all ac
 ## 8 Week SQL Challenge Case Studies
 
 <a href="www.8weeksqlchallenge.com/getting-started" target="_blank" rel="noopener noreferrer">
-<img src="./course-content/assets/8-week-sql-challenge.png" width="50%" height="50%">
+<img src="./course-content/assets/8-week-sql-challenge.png">
 </a>
 <br>
 
@@ -152,7 +152,7 @@ Solve all 8 realistic SQL case studies designed to simulate real work scenarios 
 ## About the Author: Danny Ma <a name = "about-danny"></a>
 
 <a href="https://linktr.ee/datawithdanny" target="_blank" rel="noopener noreferrer">
-<img src="./course-content/assets/avatar.png" width="50%" height="50%">
+<img src="./course-content/assets/avatar.png">
 </a>
 
 Danny is the Chief Data Mentor at Data With Danny and the Founder & CEO of Sydney Data Science, a boutique data consultancy based out of Sydney, Australia 🇦🇺
