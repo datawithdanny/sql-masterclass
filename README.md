@@ -109,9 +109,15 @@ You can also find all of the raw data inside the `/data` folder
 
 [![forthebadge](images/badges/raw-data.svg)](https://github.com/datawithdanny/sql-masterclass/tree/main/data)
 
-* `init.sql` to generate all the required data inside PostgreSQL, simply copy and paste the contents and run
-* `schema.sql` with the table definitions in case you want to use another SQL flavour
+Update: There are now SQL scripts for both PostgreSQL and MySQL - however all of the code inside the course contents is for PostgreSQL only.
+
+The majority of the code snippets should still work across SQL flavours but you may need to tweak some of the queries slightly!
+
+* `Postgres/init-postgres.sql` and `MySQL/init-mysql.sql` can be ran with your favourite SQL IDE like PgAdmin4 or MySQL Workbench directly to create the required database tables
+* `Postgres/schema-postgres.sql` and `MySQL/schema-mysql.sql` contain the table definitions in case you want to use them also and load in the CSV files
 * `.csv` files containing the raw data for each table if you want to import the data to another tool
+
+Note that the two flavour init scripts are essentially the same - but MySQL has backticks instead of double quotes for table creation steps!
 
 ---
 
