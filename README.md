@@ -48,11 +48,11 @@ You can also access the free `DB-Fiddle` instances below or you can also access 
 
 This is the preferred setup to access all of the course data in the desired SQLPad environment!
 
-This same Docker SQLPad interface is featured in the Data With Danny [Serious SQL course](https://www.datawithdanny./com) but with a lot more data included - you should check it out! 😉
+This same Docker SQLPad interface is featured in the Data With Danny [Serious SQL course](https://www.datawithdanny.com/) but with a lot more data included - you should check it out! 😉
 
 We even include instructions on how to install Docker if you haven't used it before inside the course :)
 
-### Docker Compose 
+### Docker Compose
 
 If you have Docker installed on your machine with Docker-Compose, you can directly use the `docker-compose.yml` file included in the root of this repo to spin up the required SQLPad infrastructure.
 
