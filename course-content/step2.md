@@ -173,7 +173,7 @@ ORDER BY region DESC;
 </details>
 <br>
 
-|    region     | 
+|    region     |
 | ------------- |
 | United States |
 | India         |
@@ -199,13 +199,10 @@ WHERE region IN ('Australia', 'United States');
 </details>
 <br>
 
-|    region     |
+| mentor_count  |
 | ------------- |
-| United States |
-| India         |
-| Australia     |
-| Asia          |
-| Africa        |
+|      11       |
+
 <br>
 
 ### Question 7
