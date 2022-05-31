@@ -201,6 +201,7 @@ SELECT
   ROUND(AVG(price)::NUMERIC, 2) AS average_eth_price
 FROM trading.prices
 WHERE EXTRACT(YEAR FROM market_date) = 2020
+  AND ticker = 'ETH'
 GROUP BY month_start
 ORDER BY month_start;
 ```
