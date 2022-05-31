@@ -104,7 +104,7 @@ GROUP BY txn_type;
 | BUY      |             10440 |
 <br>
 
-### Question 3
+### Question 4
 
 > For each year, calculate the following buy and sell metrics for Bitcoin:
 
@@ -147,7 +147,7 @@ ORDER BY txn_year, txn_type;
 |     2021 | SELL     |               589 |        2864.94 |             4.86 |
 <br>
 
-### Question 4
+### Question 5
 
 > What was the monthly total quantity purchased and sold for Ethereum in 2020?
 
@@ -185,7 +185,7 @@ ORDER BY calendar_month;
 | 2020-12-01     |  1702.7471083560609640 |  390.1583195136288607 |
 <br>
 
-### Question 5
+### Question 6
 
 > Summarise all buy and sell transactions for each `member_id` by generating 1 row for each member with the following additional columns:
 
@@ -250,7 +250,7 @@ GROUP BY member_id;
 | aab323    |   3491.8873912094965336 |  916.3032786678013621 | 4373.76210149024236043 |  916.3032786678013621 |
 <br>
 
-### Question 6
+### Question 7
 
 > What was the final quantity holding of Bitcoin for each member? Sort the output from the highest BTC holding to lowest
 
@@ -295,7 +295,7 @@ ORDER BY final_btc_holding DESC;
 | c51ce4    |   1551.6863771068051730 |
 <br>
 
-### Question 7
+### Question 8
 
 > Which members have sold less than 500 Bitcoin? Sort the output from the most BTC sold to least 
 
@@ -370,7 +370,7 @@ ORDER BY btc_sold_quantity DESC;
 | 45c48c    | 198.131022250011036 |
 <br>
 
-### Question 8
+### Question 9
 
  > What is the total Bitcoin quantity for each `member_id` owns after adding all of the BUY and SELL transactions from the `transactions` table? Sort the output by descending total quantity
 
@@ -414,7 +414,7 @@ ORDER BY total_quantity DESC;
 | c51ce4    |   1551.6863771068051730 |
 <br>
 
-### Question 9
+### Question 10
 
 > Which `member_id` has the highest buy to sell ratio by quantity?
 
@@ -453,7 +453,7 @@ ORDER BY buy_to_sell_ratio DESC;
 | c51ce4    |   2.3630130420937542 |
 <br>
 
-### Question 10
+### Question 11
 
 > For each `member_id` - which month had the highest total Ethereum quantity sold`?
 
