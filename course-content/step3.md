@@ -201,6 +201,7 @@ SELECT
   ROUND(AVG(price)::NUMERIC, 2) AS average_eth_price
 FROM trading.prices
 WHERE EXTRACT(YEAR FROM market_date) = 2020
+  AND ticker = 'ETH'
 GROUP BY month_start
 ORDER BY month_start;
 ```
@@ -454,8 +455,8 @@ This is a super common error found in SQL queries and we usually recommend casti
 ```sql
 SELECT
   ticker,
-  SUM(CASE WHEN price > open THEN 1 ELSE 0 END) / COUNT(*)) AS breakout_percentage,
-  SUM(CASE WHEN price < open THEN 1 ELSE 0 END) / COUNT(*)) AS non_breakout_percentage
+  SUM(CASE WHEN price > open THEN 1 ELSE 0 END) / COUNT(*) AS breakout_percentage,
+  SUM(CASE WHEN price < open THEN 1 ELSE 0 END) / COUNT(*) AS non_breakout_percentage
 FROM trading.prices
 WHERE market_date >= '2019-01-01' AND market_date <= '2019-12-31'
 GROUP BY ticker;

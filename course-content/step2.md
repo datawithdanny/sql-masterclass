@@ -199,13 +199,9 @@ WHERE region IN ('Australia', 'United States');
 </details>
 <br>
 
-|    region     |
+|  mentor_count |
 | ------------- |
-| United States |
-| India         |
-| Australia     |
-| Asia          |
-| Africa        |
+|            11 |
 <br>
 
 ### Question 7
