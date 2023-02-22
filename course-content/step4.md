@@ -223,7 +223,7 @@ SELECT
   ) AS eth_buy_qty,
   SUM(
     CASE
-      WHEN ticker = 'BTC' AND txn_type = 'SELL' THEN quantity
+      WHEN ticker = 'ETH' AND txn_type = 'SELL' THEN quantity
       ELSE 0
     END
   ) AS eth_sell_qty
